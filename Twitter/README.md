@@ -1,0 +1,4 @@
+Este proyecto lo vi en internet y lo repliqué para entender como funciona el proceso de extraer datos, transformarlos y posteriormente cargarlos en la nube. 
+La información es extraída mediante la API de Twitter en Python, con el cual limpiamos los datos que no necesitamos y nos quedamos con los útiles. Además, creamos un DAG que nos permitirá automatizar este proceso mediante Airflow en una máquina virtual de AWS.
+En el servidor de Amazon, creamos una instancia EC2 y la conectamos a nuestra computadora a través de comandos en el terminal. Le instalamos los paquetes a utilizar en el proyecto y definimos la ruta donde estará nuestro código.
+Luego creamos una carpeta en Amazon S3 para almacenar nuestros archivos y asignamos un usuario IAM con permisos para que Airflow pueda acceder sin problemas y ejecutar el DAG que creamos. 
